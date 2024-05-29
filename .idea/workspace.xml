@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e86874cd-e024-49be-a19e-df6af48966a9" name="Changes" comment="Create django-project, create and migrate models" />
+    <list default="true" id="e86874cd-e024-49be-a19e-df6af48966a9" name="Changes" comment="Create django-project">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djexample/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djexample/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/university/models.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,22 +52,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.manage.executor&quot;: &quot;Run&quot;,
-    &quot;Python.scores.executor&quot;: &quot;Run&quot;,
-    &quot;Python.views.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.manage.executor": "Run",
+    "Python.scores.executor": "Run",
+    "Python.views.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "dj-project"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bronn\PycharmProjects\Student-performance-accounting-system\university\models" />
       <recent name="C:\Users\bronn\PycharmProjects\Student-performance-accounting-system" />
       <recent name="C:\Users\bronn\PycharmProjects\Student-performance-accounting-system\example" />
       <recent name="C:\Users\bronn\PycharmProjects\Student-performance-accounting-system\example2" />
       <recent name="C:\Users\bronn\PycharmProjects\Student-performance-accounting-system\example\example" />
-      <recent name="C:\Users\bronn\PycharmProjects\Student-performance-accounting-system\example\models" />
     </key>
   </component>
   <component name="RunManager">
@@ -118,11 +124,20 @@
       <option name="project" value="LOCAL" />
       <updated>1716818145986</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Create django-project">
+      <option name="closed" value="true" />
+      <created>1716993240824</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716993240824</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create django-project, create and migrate models" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create django-project, create and migrate models" />
+    <MESSAGE value="Create django-project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create django-project" />
   </component>
 </project>
