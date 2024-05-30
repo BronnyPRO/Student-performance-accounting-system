@@ -13,6 +13,8 @@ class Students(models.Model):
     patronymic = models.CharField(max_length=100, null=False)
     group = models.CharField(max_length=10, null=False)
 
+    objects = models.Manager()
+
     @property
     def fio(self):
         return f'{self.surname} {self.name} {self.patronymic}'
@@ -37,12 +39,14 @@ class Subjects(models.Model):
     name = models.CharField(
         max_length=50,
         choices=(
-            ("math", "Math"),
-            ("physics", "Physics"),
-            ("music", "Music")
+            ("Math", "Math"),
+            ("Physics", "Physics"),
+            ("Music", "Music")
         ),
         null=False
     )
+
+    objects = models.Manager()
 
     def __str__(self):
         return f'{self.name}'
@@ -61,6 +65,8 @@ class Scores(models.Model):
     student = models.ForeignKey(Students, on_delete=models.CASCADE)
     subject = models.ForeignKey(Subjects, on_delete=models.CASCADE)
     value = models.FloatField(blank=False, null=False)
+
+    objects = models.Manager()
 
     def __str__(self):
         return f'{self.student.__str__()}: {self.subject} -> {self.value:.2f}'

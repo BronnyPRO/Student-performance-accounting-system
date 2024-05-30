@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e86874cd-e024-49be-a19e-df6af48966a9" name="Changes" comment="Updated models and created superusers. Added students in database.">
+    <list default="true" id="e86874cd-e024-49be-a19e-df6af48966a9" name="Changes" comment="Updated models.">
+      <change afterPath="$PROJECT_DIR$/university/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djexample/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djexample/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/university/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/university/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/university/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/university/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -63,11 +67,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\bronn\PycharmProjects\Student-performance-accounting-system\university\models" />
+      <recent name="C:\Users\bronn\PycharmProjects\Student-performance-accounting-system\university" />
       <recent name="C:\Users\bronn\PycharmProjects\Student-performance-accounting-system" />
+      <recent name="C:\Users\bronn\PycharmProjects\Student-performance-accounting-system\university\models" />
       <recent name="C:\Users\bronn\PycharmProjects\Student-performance-accounting-system\example" />
       <recent name="C:\Users\bronn\PycharmProjects\Student-performance-accounting-system\example2" />
-      <recent name="C:\Users\bronn\PycharmProjects\Student-performance-accounting-system\example\example" />
     </key>
   </component>
   <component name="RunManager">
@@ -147,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717068099362</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Updated models.">
+      <option name="closed" value="true" />
+      <created>1717069356521</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717069356521</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -155,6 +167,7 @@
     <MESSAGE value="Create django-project" />
     <MESSAGE value="Create models: Students and Scores.&#10;Made migration." />
     <MESSAGE value="Updated models and created superusers. Added students in database." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated models and created superusers. Added students in database." />
+    <MESSAGE value="Updated models." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated models." />
   </component>
 </project>
