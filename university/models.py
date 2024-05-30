@@ -27,15 +27,14 @@ class Students(models.Model):
                 f'group="{self.group}")')
 
 
-class Scores(models.Model):
+class Subjects(models.Model):
     """
-    A model of a scores by students.
+    A model of a subjects.
 
     id - primary key.
-    student - foreign key.
     """
-    student = models.ForeignKey(Students, on_delete=models.CASCADE)
-    subject = models.CharField(
+
+    name = models.CharField(
         max_length=50,
         choices=(
             ("math", "Math"),
@@ -44,6 +43,23 @@ class Scores(models.Model):
         ),
         null=False
     )
+
+    def __str__(self):
+        return f'{self.name}'
+
+    def __repr__(self):
+        return f'Subjects(name="{self.name}")'
+
+
+class Scores(models.Model):
+    """
+    A model of a scores by students.
+
+    id - primary key.
+    student - foreign key.
+    """
+    student = models.ForeignKey(Students, on_delete=models.CASCADE)
+    subject = models.ForeignKey(Subjects, on_delete=models.CASCADE)
     value = models.FloatField(blank=False, null=False)
 
     def __str__(self):

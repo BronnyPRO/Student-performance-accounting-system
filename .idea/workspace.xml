@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e86874cd-e024-49be-a19e-df6af48966a9" name="Changes" comment="Create models: Students and Scores.&#10;Made migration.">
+    <list default="true" id="e86874cd-e024-49be-a19e-df6af48966a9" name="Changes" comment="Updated models and created superusers. Added students in database.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/university/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/university/models.py" afterDir="false" />
@@ -139,13 +139,22 @@
       <option name="project" value="LOCAL" />
       <updated>1716994802101</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Updated models and created superusers. Added students in database.">
+      <option name="closed" value="true" />
+      <created>1717068099362</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717068099362</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create django-project, create and migrate models" />
     <MESSAGE value="Create django-project" />
     <MESSAGE value="Create models: Students and Scores.&#10;Made migration." />
-    <option name="LAST_COMMIT_MESSAGE" value="Create models: Students and Scores.&#10;Made migration." />
+    <MESSAGE value="Updated models and created superusers. Added students in database." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated models and created superusers. Added students in database." />
   </component>
 </project>
