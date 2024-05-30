@@ -21,7 +21,10 @@ class Students(models.Model):
         return f'{self.fio} ({self.group})'
 
     def __repr__(self):
-        return f'Student(surname="{self.surname}", name="{self.name}", patronymic="{self.patronymic}")'
+        return (f'Student(surname="{self.surname}", '
+                f'name="{self.name}", '
+                f'patronymic="{self.patronymic}", '
+                f'group="{self.group}")')
 
 
 class Scores(models.Model):
@@ -47,4 +50,4 @@ class Scores(models.Model):
         return f'{self.student.__str__()}: {self.subject} -> {self.value:.2f}'
 
     def __repr__(self):
-        return f'Student(student="{self.student}", subject="{self.subject}", value="{self.value}")'
+        return f'Student(student="{self.student}", subject="{self.subject}", value={self.value})'
