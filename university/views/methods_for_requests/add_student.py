@@ -1,4 +1,3 @@
-
 from django.shortcuts import redirect
 
 from university.models import Students, Scores, Subjects
