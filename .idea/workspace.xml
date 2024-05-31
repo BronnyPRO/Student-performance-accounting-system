@@ -4,26 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e86874cd-e024-49be-a19e-df6af48966a9" name="Changes" comment="Updated models, admin.py. Added views, urls, index.html">
-      <change afterPath="$PROJECT_DIR$/university/templates/add_student.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/university/templates/delete_student.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/university/templates/edit_student.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/university/views/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/university/views/add_student_view.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/university/views/delete_student_view.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/university/views/edit_student_view.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/university/views/methods_for_requests/add_student.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/university/views/methods_for_requests/delete_student.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/university/views/methods_for_requests/edit_student.py" afterDir="false" />
+    <list default="true" id="e86874cd-e024-49be-a19e-df6af48966a9" name="Changes" comment="Created functions for table &quot;Students&quot;.">
+      <change afterPath="$PROJECT_DIR$/university/templates/add_subject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university/templates/delete_subject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university/templates/edit_subject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university/views/add_subject_view.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university/views/delete_subject_view.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university/views/edit_subject_view.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university/views/methods_for_requests/add_subject.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university/views/methods_for_requests/delete_subject.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university/views/methods_for_requests/edit_subject.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djexample/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djexample/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djexample/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djexample/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/university/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/university/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university/templates/edit_student.html" beforeDir="false" afterPath="$PROJECT_DIR$/university/templates/edit_student.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/university/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/university/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/university/views/index_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university/views/add_student_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/university/views/add_student_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university/views/delete_student_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/university/views/delete_student_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university/views/edit_student_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/university/views/edit_student_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university/views/methods_for_requests/add_student.py" beforeDir="false" afterPath="$PROJECT_DIR$/university/views/methods_for_requests/add_student.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +32,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -179,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717080569166</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Created functions for table &quot;Students&quot;.">
+      <option name="closed" value="true" />
+      <created>1717127218282</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717127218282</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -189,6 +196,7 @@
     <MESSAGE value="Updated models and created superusers. Added students in database." />
     <MESSAGE value="Updated models." />
     <MESSAGE value="Updated models, admin.py. Added views, urls, index.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated models, admin.py. Added views, urls, index.html" />
+    <MESSAGE value="Created functions for table &quot;Students&quot;." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created functions for table &quot;Students&quot;." />
   </component>
 </project>
