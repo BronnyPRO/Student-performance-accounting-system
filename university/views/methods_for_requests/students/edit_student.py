@@ -1,7 +1,7 @@
 
 from django.shortcuts import redirect
 
-from university.models import Students, Scores, Subjects
+from university.models import Students
 
 
 def submit_form(request):
@@ -16,7 +16,7 @@ def submit_form(request):
         patronymic_new = request.POST.get('patronymic_new')
         group_new = request.POST.get('group_new')
 
-        student = (Students.objects.filter(
+        Students.objects.filter(
             surname=surname,
             name=name,
             patronymic=patronymic,
@@ -27,6 +27,5 @@ def submit_form(request):
                 patronymic=patronymic_new,
                 group=group_new
                 )
-        )
 
     return redirect('/')

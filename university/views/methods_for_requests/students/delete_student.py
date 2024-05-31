@@ -1,6 +1,6 @@
 from django.shortcuts import redirect
 
-from university.models import Students, Scores, Subjects
+from university.models import Students
 
 
 def submit_form(request):

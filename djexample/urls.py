@@ -19,17 +19,20 @@ from django.urls import path
 
 from university.views.index_view import IndexView
 
-from university.views.add_student_view import AddStudentView
-from university.views.delete_student_view import DeleteStudentView
-from university.views.edit_student_view import EditStudentView
+from university.views.students.add_student_view import AddStudentView
+from university.views.students.delete_student_view import DeleteStudentView
+from university.views.students.edit_student_view import EditStudentView
 
-from university.views.add_subject_view import AddSubjectView
-from university.views.delete_subject_view import DeleteSubjectView
-from university.views.edit_subject_view import EditSubjectView
+from university.views.subjects.add_subject_view import AddSubjectView
+from university.views.subjects.delete_subject_view import DeleteSubjectView
+from university.views.subjects.edit_subject_view import EditSubjectView
 
-from university.views.methods_for_requests import add_student, delete_student, edit_student
-from university.views.methods_for_requests import add_subject, delete_subject, edit_subject
+from university.views.scores.edit_score_view import EditScoreView
+from university.views.scores.delete_score_view import DeleteScoreView
 
+from university.views.methods_for_requests.students import add_student, edit_student, delete_student
+from university.views.methods_for_requests.subjects import edit_subject, add_subject, delete_subject
+from university.views.methods_for_requests.scores import edit_score, delete_score
 
 urlpatterns = [
     path('', IndexView.as_view()),
@@ -46,6 +49,11 @@ urlpatterns = [
     path('delete_subject_submit/', delete_subject.submit_form, name='delete_subject_submit'),
     path('edit_subject/', EditSubjectView.as_view(), name='edit_subject'),
     path('edit_subject_submit/', edit_subject.submit_form, name='edit_subject_submit'),
+
+    path('edit_score/', EditScoreView.as_view(), name='edit_score'),
+    path('edit_score_submit/', edit_score.submit_form, name='edit_score_submit'),
+    path('delete_score/', DeleteScoreView.as_view(), name='delete_score'),
+    path('delete_score_submit/', delete_score.submit_form, name='delete_score_submit'),
 
     path('admin/', admin.site.urls),
 ]

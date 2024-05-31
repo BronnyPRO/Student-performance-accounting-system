@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+        <div class="container">
+            <h1 style="text-align:center; font-weight: bold;">Удалить оценку</h1>
+			<br>
+            <form action="{% url 'delete_score_submit' %}" method="post">
+				{% csrf_token %}
+				<div class="container" style="display: flex; justify-content: center; gap: 20px;">
+					<h3 style="text-align:center; font-weight: bold;">Студент:</h3>
+    				<input type="text" name="surname" placeholder="Фамилия" style="border: 3px solid black; border-radius: 10px; font-size: 20px;">
+    				<input type="text" name="name" placeholder="Имя" style="border: 3px solid black; border-radius: 10px; font-size: 20px;">
+    				<input type="text" name="patronymic" placeholder="Отчество" style="border: 3px solid black; border-radius: 10px; font-size: 20px;">
+    				<input type="text" name="group" placeholder="Группа" style="border: 3px solid black; border-radius: 10px; font-size: 20px;">
+				</div>
+				<br>
+                <div class="container" style="display: flex; justify-content: center; gap: 20px;">
+    				<input type="text" name="subject" placeholder="Предмет" style="border: 3px solid black; border-radius: 10px; font-size: 20px;">
+				</div>
+    			<br>
+				<div class="container" style="display: flex; justify-content: center;">
+    				<button type="submit" style="border: 3px solid black; border-radius: 10px; font-size: 20px;">Удалить</button>
+				</div>
+			</form>
+        </div>
+	</body>
+</html>
