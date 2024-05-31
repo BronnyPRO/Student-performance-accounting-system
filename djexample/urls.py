@@ -17,9 +17,20 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from university.views import IndexView
+from university.views.index_view import IndexView
+from university.views.add_student_view import AddStudentView
+from university.views.delete_student_view import DeleteStudentView
+from university.views.edit_student_view import EditStudentView
+from university.views.methods_for_requests import add_student, delete_student, edit_student
+
 
 urlpatterns = [
     path('', IndexView.as_view()),
+    path('add_student/', AddStudentView.as_view(), name='add_student'),
+    path('add_student_submit/', add_student.submit_form, name='add_student_submit'),
+    path('delete_student/', DeleteStudentView.as_view(), name='delete_student'),
+    path('delete_student_submit/', delete_student.submit_form, name='delete_student_submit'),
+    path('edit_student/', EditStudentView.as_view(), name='edit_student'),
+    path('edit_student_submit/', edit_student.submit_form, name='edit_student_submit'),
     path('admin/', admin.site.urls),
 ]

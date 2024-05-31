@@ -9,7 +9,7 @@
 	</head>
 	<body>
         <div class="container">
-            <h1 style="text-align:center;">Успеваемость студентов</h1>
+            <h1 style="text-align:center; font-weight: bold;">Успеваемость студентов</h1>
 
             <table class="table table-striped">
                 <thead>
@@ -19,6 +19,7 @@
                     {% for subject in subjects %}
                       <th>{{subject}}</th>
                     {% endfor %}
+                    <th>Средний балл у студента</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -29,10 +30,19 @@
                              {% for score in statistics.scores %}
                                 <td>{{score}}</td>
                               {% endfor %}
+                            <td>{{statistics.average_score}}</td>
                         </tr>
                     {% endfor %}
                 </tbody>
             </table>
+        </div>
+        <div class="container" style="display: flex; justify-content: space-between;">
+            <button style="border: 3px solid black; border-radius: 10px; font-size: 20px;">
+                <a href="{% url 'add_student' %}" style="color: black; text-decoration: none">Добавить студента</a></button>
+            <button style="border: 3px solid black; border-radius: 10px; font-size: 20px;">
+                <a href="{% url 'delete_student' %}" style="color: black; text-decoration: none">Удалить студента</a></button>
+            <button style="border: 3px solid black; border-radius: 10px; font-size: 20px;">
+                <a href="{% url 'edit_student' %}" style="color: black; text-decoration: none">Изменить студента</a></button>
         </div>
 	</body>
 </html>

@@ -4,14 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e86874cd-e024-49be-a19e-df6af48966a9" name="Changes" comment="Updated models.">
-      <change afterPath="$PROJECT_DIR$/university/templates/index.html" afterDir="false" />
+    <list default="true" id="e86874cd-e024-49be-a19e-df6af48966a9" name="Changes" comment="Updated models, admin.py. Added views, urls, index.html">
+      <change afterPath="$PROJECT_DIR$/university/templates/add_student.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university/templates/delete_student.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university/templates/edit_student.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university/views/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university/views/add_student_view.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university/views/delete_student_view.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university/views/edit_student_view.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university/views/methods_for_requests/add_student.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university/views/methods_for_requests/delete_student.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/university/views/methods_for_requests/edit_student.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djexample/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djexample/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djexample/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djexample/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/university/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university/migrations/0001_initial.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/university/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/university/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/university/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/university/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/university/views/index_view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,11 +79,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bronn\PycharmProjects\Student-performance-accounting-system\university\views" />
       <recent name="C:\Users\bronn\PycharmProjects\Student-performance-accounting-system\university" />
       <recent name="C:\Users\bronn\PycharmProjects\Student-performance-accounting-system" />
       <recent name="C:\Users\bronn\PycharmProjects\Student-performance-accounting-system\university\models" />
       <recent name="C:\Users\bronn\PycharmProjects\Student-performance-accounting-system\example" />
-      <recent name="C:\Users\bronn\PycharmProjects\Student-performance-accounting-system\example2" />
     </key>
   </component>
   <component name="RunManager">
@@ -159,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717069356521</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Updated models, admin.py. Added views, urls, index.html">
+      <option name="closed" value="true" />
+      <created>1717080569166</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717080569166</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -168,6 +188,7 @@
     <MESSAGE value="Create models: Students and Scores.&#10;Made migration." />
     <MESSAGE value="Updated models and created superusers. Added students in database." />
     <MESSAGE value="Updated models." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated models." />
+    <MESSAGE value="Updated models, admin.py. Added views, urls, index.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated models, admin.py. Added views, urls, index.html" />
   </component>
 </project>
