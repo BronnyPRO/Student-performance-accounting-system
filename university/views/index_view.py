@@ -2,6 +2,8 @@ from django.shortcuts import render
 
 from collections import defaultdict
 
+from statistics import mean
+
 from django.views.generic.base import TemplateView
 
 from university.models import Scores
@@ -25,7 +27,8 @@ class IndexView(TemplateView):
         student_statistics = [
             {
                 'student': student,
-                'scores': [f'{scores[subject]:.1f}' for subject in subjects]
+                'scores': [f'{scores[subject]:.1f}' for subject in subjects],
+                'average_score': f'{mean([scores[subject] for subject in subjects]):.1f}'
             }
             for student, scores in student_scores.items()
         ]
@@ -36,4 +39,3 @@ class IndexView(TemplateView):
             }
         )
         return context
-

@@ -37,12 +37,7 @@ class Subjects(models.Model):
     """
 
     name = models.CharField(
-        max_length=50,
-        choices=(
-            ("Math", "Math"),
-            ("Physics", "Physics"),
-            ("Music", "Music")
-        ),
+        max_length=100,
         null=False
     )
 
@@ -64,7 +59,7 @@ class Scores(models.Model):
     """
     student = models.ForeignKey(Students, on_delete=models.CASCADE)
     subject = models.ForeignKey(Subjects, on_delete=models.CASCADE)
-    value = models.FloatField(blank=False, null=False)
+    value = models.FloatField(default=0)
 
     objects = models.Manager()
 
