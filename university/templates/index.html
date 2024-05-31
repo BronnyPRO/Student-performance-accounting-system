@@ -13,15 +13,15 @@
 
             <table class="table table-striped">
                 <thead>
-                <tr>
-                  <th>#</th>
-                  <th>ФИО</th>
-                  <th>Группа</th>
-                    {% for subject in subjects %}
-                      <th>{{subject}}</th>
-                    {% endfor %}
-                    <th>Средний балл у студента</th>
-                </tr>
+                    <tr>
+                        <th>#</th>
+                        <th>ФИО</th>
+                        <th>Группа</th>
+                        {% for subject in subjects %}
+                            <th>{{subject}}</th>
+                        {% endfor %}
+                        <th>Средний балл у студента</th>
+                    </tr>
                 </thead>
                 <tbody>
                     {% for statistics in student_statistics %}
@@ -61,6 +61,40 @@
                 <a href="{% url 'edit_score' %}" style="color: black; text-decoration: none">Изменить оценку</a></button>
             <button style="border: 3px solid black; border-radius: 10px; font-size: 20px;">
                 <a href="{% url 'delete_score' %}" style="color: black; text-decoration: none">Удалить оценку</a></button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <h1 style="text-align:center; font-weight: bold;">Средний балл по предметам</h1>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Предмет</th>
+                    <th>Средний балл</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for subject in average_scores %}
+                <tr>
+                    <th scope="row">{{subject.subject}}</th>
+                    <td>{{subject.average_score}}</td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <h1 style="text-align:center; font-weight: bold;">Отчёт о студентах</h1>
+            <div class="container" style="display: flex; justify-content: center; gap: 20px;">
+                <h3 style="text-align:center; font-weight: bold;">Лучший студент: {{best_student}}</h3>
+            </div>
+            <div class="container" style="display: flex; justify-content: center; gap: 20px;">
+                <h3 style="text-align:center; font-weight: bold;">Худший студент: {{worse_student}}</h3>
+            </div>
         </div>
 	</body>
 </html>
